@@ -55,12 +55,52 @@
       >
         <!-- nav links -->
         <div class="lg:hidden">
-          <!-- You can open the modal using ID.showModal() method -->
-          <button class="" onclick="my_modal_3.showModal()">
-            <i
-              class="fa-solid fa-bars text-black md:text-white text-2xl sm:mr-5"
-            ></i>
-          </button>
+          <div class="drawer drawer-end z-50">
+            <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+            <div class="drawer-content">
+              <!-- Page content here -->
+              <label for="my-drawer-4" class="drawer-button"
+                ><i
+                  class="fa-solid fa-bars text-black md:text-white text-2xl sm:mr-5"
+                ></i
+              ></label>
+            </div>
+            <div class="drawer-side">
+              <label for="my-drawer-4" class="drawer-overlay"></label>
+              <ul class="menu p-4 w-80 h-full bg-base-200 text-base-content">
+                <ul class="flex flex-col justify-center p-4 text-black gap-4">
+                  <li>
+                    <a
+                      href=""
+                      class="hover:text-color-primary hover:transition-colors"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="hover:text-color-primary hover:transition-colors"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="hover:text-color-primary hover:transition-colors"
+                      >Shop</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="hover:text-color-primary hover:transition-colors"
+                      >colors Fruits</a
+                    >
+                  </li>
+                </ul>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="hidden lg:block">
           <ul class="flex text-white gap-7 ml-3">
@@ -1245,38 +1285,5 @@
         </div>
       </div>
     </div>
-
-    <!-- menu bar main modal code -->
-    <dialog id="my_modal_3" class="modal absolute top-0">
-      <form method="dialog" class="modal-box">
-        <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
-          ✕
-        </button>
-        <ul
-          class="flex flex-col justify-center text-center p-4 text-black gap-7"
-        >
-          <li>
-            <a href="" class="hover:text-color-primary hover:transition-colors"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a href="" class="hover:text-color-primary hover:transition-colors"
-              >About Us</a
-            >
-          </li>
-          <li>
-            <a href="" class="hover:text-color-primary hover:transition-colors"
-              >Shop</a
-            >
-          </li>
-          <li>
-            <a href="" class="hover:text-color-primary hover:transition-colors"
-              >colors Fruits</a
-            >
-          </li>
-        </ul>
-      </form>
-    </dialog>
   </body>
 </html>
